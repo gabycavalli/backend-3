@@ -5,7 +5,7 @@
 - Alumno: Gabriel Cavalli
 - Curso: backend-3
 - Repositorio GitHub: https://github.com/gabycavalli/backend-3.git
-- Imagen DockerHub: Pendiente (sin crear)
+- Imagen DockerHub: https://hub.docker.com/r/gabycavalli/backend3
 - Web: opcional, no requerida para este entregable
 
 ## Estructura del proyecto
@@ -244,7 +244,7 @@ CMD ["node", "src/server.js"]
 Pegar aqui el log cuando lo ejecutes en tu maquina con Docker:
 
 ```bash
-docker build -t TU_USUARIO/adopcion-api:1.0.0 .
+docker build -t gabycavalli/backend3:1.0.0 .
 ```
 
 ```text
@@ -255,13 +255,13 @@ PEGAR AQUI EL OUTPUT REAL DE docker build
 
 ### Nombre y tag sugeridos
 
-- Imagen local: `adopcion-api:1.0.0`
-- Imagen remota: `TU_USUARIO/adopcion-api:1.0.0`
+- Imagen local: `gabycavalli/backend3:1.0.0`
+- Imagen remota: `gabycavalli/backend3:1.0.0`
 
 ### Evidencia de imagen construida correctamente
 
 ```text
-PEGAR AQUI EL OUTPUT REAL DE docker images | findstr adopcion-api
+PEGAR AQUI EL OUTPUT REAL DE docker images | findstr backend3
 ```
 
 ### Evidencia de ejecucion del contenedor
@@ -269,7 +269,7 @@ PEGAR AQUI EL OUTPUT REAL DE docker images | findstr adopcion-api
 Ejecutar:
 
 ```bash
-docker run --rm -p 8080:8080 TU_USUARIO/adopcion-api:1.0.0
+docker run --rm -p 8080:8080 gabycavalli/backend3:1.0.0
 ```
 
 Luego probar en otra terminal:
@@ -302,27 +302,26 @@ npm test
 ### Construir la imagen Docker
 
 ```bash
-docker build -t TU_USUARIO/adopcion-api:1.0.0 .
+docker build -t gabycavalli/backend3:1.0.0 .
 ```
 
 ### Ejecutar el contenedor
 
 ```bash
-docker run --rm -p 8080:8080 TU_USUARIO/adopcion-api:1.0.0
+docker run --rm -p 8080:8080 gabycavalli/backend3:1.0.0
 ```
 
 ### Subir la imagen a DockerHub
 
 ```bash
 docker login
-docker tag adopcion-api:1.0.0 TU_USUARIO/adopcion-api:1.0.0
-docker push TU_USUARIO/adopcion-api:1.0.0
+docker push gabycavalli/backend3:1.0.0
 ```
 
 ### Escaneo basico de seguridad
 
 ```bash
-docker scout quickview TU_USUARIO/adopcion-api:1.0.0
+docker scout quickview gabycavalli/backend3:1.0.0
 ```
 
 ### Evidencia de ejecucion exitosa
@@ -337,7 +336,7 @@ PEGAR AQUI EL OUTPUT DE docker run
 
 ### Contenido completo del README actualizado
 
-`````md
+````md
 # Adopcion API
 
 API simple de adopcion de mascotas con endpoints para listar, crear y consultar adopciones de perros y gatos.
@@ -477,12 +476,12 @@ docker scout quickview TU_USUARIO/adopcion-api:1.0.0
 - Los tests funcionales fueron validados localmente en este workspace.
 - No fue posible validar `docker build` ni la ejecucion del contenedor desde este entorno porque la CLI de Docker no esta instalada.
 - La URL publica de DockerHub y la URL del repositorio deben completarse cuando hagas la subida real.
-`````
+````
 
 ## Enlaces finales a completar
 
-- Repositorio GitHub: `https://github.com/TU_USUARIO/TU_REPO`
-- Imagen DockerHub: `https://hub.docker.com/r/TU_USUARIO/adopcion-api`
+- Repositorio GitHub: `https://github.com/gabycavalli/backend-3.git`
+- Imagen DockerHub: `https://hub.docker.com/r/gabycavalli/backend3`
 
 ## Pasos para obtener las URLs publicas
 
@@ -495,14 +494,14 @@ git init
 git add .
 git commit -m "Entrega final backend 3"
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git remote add origin https://github.com/gabycavalli/backend-3.git
 git push -u origin main
 ```
 
 Cuando el push termine, la URL publica del repositorio va a quedar con este formato:
 
 ```text
-https://github.com/TU_USUARIO/TU_REPO
+https://github.com/gabycavalli/backend-3.git
 ```
 
 ### Publicar la imagen en DockerHub
@@ -510,25 +509,24 @@ https://github.com/TU_USUARIO/TU_REPO
 Despues de instalar Docker Desktop y crear tu repositorio en DockerHub, ejecutar:
 
 ```bash
-docker build -t adopcion-api:1.0.0 .
+docker build -t gabycavalli/backend3:1.0.0 .
 docker login
-docker tag adopcion-api:1.0.0 TU_USUARIO/adopcion-api:1.0.0
-docker push TU_USUARIO/adopcion-api:1.0.0
+docker push gabycavalli/backend3:1.0.0
 ```
 
 La URL publica de la imagen va a quedar con este formato:
 
 ```text
-https://hub.docker.com/r/TU_USUARIO/adopcion-api
+https://hub.docker.com/r/gabycavalli/backend3
 ```
 
 ### Como deberia verse la entrega final
 
 ```text
-Alumno: TU_NOMBRE
-Curso: TU_CURSO
-Repositorio GitHub: https://github.com/TU_USUARIO/TU_REPO
-Imagen DockerHub: https://hub.docker.com/r/TU_USUARIO/adopcion-api
+Alumno: Gabriel Cavalli
+Curso: backend-3
+Repositorio GitHub: https://github.com/gabycavalli/backend-3.git
+Imagen DockerHub: https://hub.docker.com/r/gabycavalli/backend3
 ```
 
 ## Teoria
@@ -544,4 +542,7 @@ Los tests funcionales validan el comportamiento observable de la API. En este ca
 ### Conclusiones
 
 El proyecto queda preparado para ser evaluado con una suite funcional completa, un Dockerfile reproducible y documentacion suficiente para su ejecucion. Solo resta completar los enlaces publicos y pegar los logs reales generados al construir y publicar la imagen en Docker.
+
+```
+
 ```

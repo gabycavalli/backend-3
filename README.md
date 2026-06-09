@@ -97,13 +97,13 @@ El contenedor usa:
 ### Construir la imagen
 
 ```bash
-docker build -t adopcion-api:1.0.0 .
+docker build -t gabycavalli/backend3:1.0.0 .
 ```
 
 ### Ejecutar el contenedor
 
 ```bash
-docker run --rm -p 8080:8080 adopcion-api:1.0.0
+docker run --rm -p 8080:8080 gabycavalli/backend3:1.0.0
 ```
 
 Luego probar:
@@ -114,26 +114,26 @@ curl http://localhost:8080/api/adoptions
 
 ## DockerHub
 
-Completar con tus datos al subir la imagen:
+Repositorio configurado:
 
-- repositorio sugerido: `TU_USUARIO/adopcion-api`
+- repositorio: `gabycavalli/backend3`
 - tag sugerido: `1.0.0`
 
 Comandos:
 
 ```bash
-docker tag adopcion-api:1.0.0 TU_USUARIO/adopcion-api:1.0.0
-docker push TU_USUARIO/adopcion-api:1.0.0
+docker push gabycavalli/backend3:1.0.0
 ```
 
 Escaneo basico sugerido:
 
 ```bash
-docker scout quickview TU_USUARIO/adopcion-api:1.0.0
+docker scout quickview gabycavalli/backend3:1.0.0
 ```
 
 ## Notas de validacion
 
 - Los tests funcionales fueron validados localmente en este workspace.
 - No fue posible validar `docker build` ni la ejecucion del contenedor desde este entorno porque la CLI de Docker no esta instalada.
-- La URL publica de DockerHub y la URL del repositorio deben completarse cuando hagas la subida real.
+- URL de GitHub: `https://github.com/gabycavalli/backend-3.git`
+- URL de DockerHub: `https://hub.docker.com/r/gabycavalli/backend3`
