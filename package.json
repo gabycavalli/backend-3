@@ -1,0 +1,17 @@
+{
+  "name": "adopcion-api",
+  "version": "1.0.0",
+  "description": "API de adopción de perros y gatos",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}

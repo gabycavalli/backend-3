@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1781040578924" clover="3.2.0">
+  <project timestamp="1781040578924" name="All files">
+    <metrics statements="44" coveredstatements="39" conditionals="10" coveredconditionals="9" methods="7" coveredmethods="3" elements="61" coveredelements="51" complexity="0" loc="44" ncloc="44" packages="2" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="0"/>
+      <file name="server.js" path="C:\Users\gabri\Documents\coder\entregaBack-3\src\server.js">
+        <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.adoption">
+      <metrics statements="34" coveredstatements="31" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="3"/>
+      <file name="adoption.controller.js" path="C:\Users\gabri\Documents\coder\entregaBack-3\src\adoption\adoption.controller.js">
+        <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+      <file name="adoption.model.js" path="C:\Users\gabri\Documents\coder\entregaBack-3\src\adoption\adoption.model.js">
+        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="adoption.router.js" path="C:\Users\gabri\Documents\coder\entregaBack-3\src\adoption\adoption.router.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
